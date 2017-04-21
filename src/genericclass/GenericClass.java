@@ -25,9 +25,16 @@ public class GenericClass {
         List<Pair> x = new ArrayList<>();
 
         //add Pair values to ArrayList
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 7; i++) {
             x.add(new Pair(1 + i, "Test: " + (i + 1)));
         }
+        
+        x.add(new Pair(50, "Test of a string ^_^"));
+        
+        x.add(new Pair(50.5686, 'o'));
+        
+        long t = 312345674;
+        x.add(new Pair(t, new Object()));
 
         //Print all Pair values toString methods
         for (int i = 0; i < x.size(); i++) {
